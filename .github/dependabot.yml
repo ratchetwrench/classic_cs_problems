@@ -1,0 +1,29 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "12:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: jupyter-client
+    versions:
+    - 6.1.11
+    - 6.1.12
+    - 6.1.13
+  - dependency-name: ipython
+    versions:
+    - 7.19.0
+    - 7.20.0
+    - 7.21.0
+  - dependency-name: ipykernel
+    versions:
+    - 5.4.3
+    - 5.5.0
+  - dependency-name: qtconsole
+    versions:
+    - 5.0.2
+  - dependency-name: bleach
+    versions:
+    - 3.1.4
